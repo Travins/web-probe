@@ -27,6 +27,11 @@ const handleOneUrl = async (url) => {
 }
 
 router.route('/')
+    .get(async (req, res, next) => {
+        res.status(200).json({
+            success: true
+        })
+    })
     .post(async (req, res, next) => {
         try {
             const result = await handleOneUrl(req.body.address)
