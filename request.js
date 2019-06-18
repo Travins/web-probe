@@ -3,9 +3,9 @@ const request = require('request')
 const option = {
     method: 'GET',
     time: true,
-    // headers: {
-    //     'User-Agent': `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36`
-    // }
+    headers: {
+        'User-Agent': `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36`
+    }
 }
 
 const handleOneUrl = (url) => {
@@ -27,12 +27,12 @@ const handleOneUrl = (url) => {
 }
 
 const urls = [
-    // 'https://www.shou.edu.cn/',
+    'https://www.shou.edu.cn/',
     // 'http://smxy.shou.edu.cn/',
-    'http://www.taobao.com/',
-    'http://www.baidu.com/',
-    'http://www.163.com/',
-    'http://www.google.com'
+    // 'http://www.taobao.com/',
+    // 'http://www.baidu.com/',
+    // 'http://www.163.com/',
+    // 'http://www.google.com'
 ]
 
 const handleUrls = (urls) => {
